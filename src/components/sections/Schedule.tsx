@@ -13,7 +13,7 @@ const SLOTS: { time: string; state: ScreenState; note: string }[] = [
 
 export function Schedule() {
   const [index, setIndex] = useState(0);
-  const current = SLOTS[index];
+  const current = SLOTS[index]!;
 
   return (
     <section id="schedule" className="border-b border-hair px-5 py-24 sm:px-8 sm:py-32">
